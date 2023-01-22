@@ -58,12 +58,12 @@ Array(300).fill().forEach(addStar)
 
 //Background
 
-const techTexture = new THREE.TextureLoader().load('banner2.png');
+const techTexture = new THREE.TextureLoader().load('./assets/banner2.png');
 scene.background = techTexture;
 
 //Avatar
 
-const alexTexture = new THREE.TextureLoader().load('mypic.png')
+const alexTexture = new THREE.TextureLoader().load('./assets/mypic.png')
 
 const alex = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -74,8 +74,8 @@ scene.add(alex);
 
 //Sphere
 
-const frontendTexture = new THREE.TextureLoader().load('banner1.png');
-const otherTexture = new THREE.TextureLoader().load('banner1.png')
+const frontendTexture = new THREE.TextureLoader().load('./assets/banner1.png');
+const otherTexture = new THREE.TextureLoader().load('./assets/banner1.png')
 
 const frontend = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
